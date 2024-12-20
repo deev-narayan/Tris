@@ -1,0 +1,21 @@
+#rank{
+    font-size: 1.1rem;
+    opacity: .9;
+    font-weight: 500;
+}
+#pa{
+    font-size: 1.2em;
+    font-weight: 600;
+    filter: drop-shadow(1px 1px 30px #000000);
+    z-index: 99;
+    color: rgb(71, 71, 71);
+}
+#count{
+    opacity: .5;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 600;
+}
+#contain{
+    margin-bottom: 1.75rem;
+}
