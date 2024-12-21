@@ -33,7 +33,7 @@ export default function home({profile,name,fcount,fwcount}){
                         <div id="pic">
                         <img src={profile} alt="" />
                         </div>
-                        <p>@{name}</p>
+                        <p style={{ fontsize :"3rem"}}>@{name}</p>
                         <i className="ri-arrow-drop-down-fill"></i>
                     </div>
                     <i className="ri-menu-line"></i>
@@ -45,21 +45,20 @@ export default function home({profile,name,fcount,fwcount}){
                     <img src={profile} alt="" />
                     </div>
                     <div id="finfo">
-                        <div id="line"></div>
+                    <p  >@{name}</p>
                         <div id="lng">
-                            <p>{fcount}<br /> Follower</p>
-                            <div id="vert"></div>
-                            <p>{fwcount}<br /> Following</p>
+                            <p> <span>Follower </span><br />{fcount} </p>
+                          
+                            <p> <span>Following </span><br />{fwcount} </p>
                         </div>
-                        <div id="line"></div>
+                        
                     </div>
                 </div>
                 <div id="recent">
-                    <p>Who is following you</p>
+                    <p>Followers</p>
                     <div id="recent-list">
                         <Flist />
                     </div>
-                    <p id="li">Show more</p>
                 </div>
             </div>
             <div id="center2">

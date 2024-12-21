@@ -28,9 +28,9 @@ export default function Posts({imgsrc,ownimg,name,id,likeNo}) {
                 </div>
                 <div id="numcount"></div>
             <div id="pinf">
-            <p onClick={clicked}>
-                likes = {count}
-                {isLiked?<i className="ri-heart-fill" style={likeStyle}></i>:<i className="ri-heart-3-line"></i>}
+            <p className="likecont" onClick={clicked}>
+                
+                {isLiked?<i className="ri-heart-fill" style={likeStyle}></i>:<i className="ri-heart-3-line"></i>}{count}
             </p>
                 <i className="ri-chat-smile-3-fill"></i>
                 <i className="ri-shopping-bag-4-fill"></i>
