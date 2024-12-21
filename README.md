@@ -1,5 +1,5 @@
 # Basic React App
-## after cloning the repo
-## run -  npm install
-## then - run npm run dev
-## it's a basic react application# learn-git
+01. after cloning the repo
+02. run -  npm install
+03. then - run npm run dev
+04. it's a basic react application# learn-git
