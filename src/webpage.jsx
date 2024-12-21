@@ -12,7 +12,7 @@ export default function home({profile,name,fcount,fwcount}){
         const dat = {
             src:file,
         }
-        setPost([dat,...post]);
+        setPost([...post,dat]);
         console.log(post);
     }
     return(

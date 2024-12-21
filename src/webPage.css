@@ -8,7 +8,7 @@ html,body{
     width: 100%;
 }
 body{
-    background-color: rgb(30, 30, 30);
+    background: linear-gradient(90deg,#dadada,#b4b4b4);
 }
 #main{
     height: 100%;
@@ -250,6 +250,27 @@ img{
         display: none;
     }
     #center2{
-        width: 70%;
+        width: 60%;
+    }
+    #left{
+        width: 40%;
+    }
+}
+
+@media (max-width:780px){
+    #right{
+        display: none;
+    }
+    #center2{
+        width: 85%;
+    }
+    #left{
+        display: none
+    }
+}
+
+@media (max-width:500px){
+    #center2{
+        width: 95%;
     }
 }

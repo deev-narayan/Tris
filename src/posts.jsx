@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./posts.css";
 
-export default function Posts({imgsrc,ownimg,name,id,likeNo}) {
+export default function Posts({imgsrc,ownimg,name,id,likeNo,caption}) {
     let [isLiked,setIsLiked]=useState(false);
     let[count,setCount]=useState(likeNo);
     let clicked = ()=>{
@@ -36,7 +36,7 @@ export default function Posts({imgsrc,ownimg,name,id,likeNo}) {
                 <i className="ri-shopping-bag-4-fill"></i>
             </div>
             <div id="captions">
-                {"caption"}
+                <p>{caption}</p>
             </div>
             </div>
         </div>
