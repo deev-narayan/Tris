@@ -12,7 +12,7 @@ export default function home({profile,name,fcount,fwcount}){
         const dat = {
             src:file,
         }
-        setPost([...post,dat]);
+        setPost([dat,...post]);
         console.log(post);
     }
     return(
@@ -71,7 +71,7 @@ export default function home({profile,name,fcount,fwcount}){
                 <button id="post" onClick={addPost}>Post</button>
                 </div>
                 {post.map((item, index) => (
-                <Posts key={index} imgsrc={item.src} alt="" name={"Divyansh"} id={"devkr_7"}  likeNo={0} ownimg={profile} />
+                <Posts key={post.length - index} imgsrc={item.src} alt="" name={"Divyansh"} id={"devkr_7"}  likeNo={0} ownimg={profile} />
                 ))}
                 <Links/>
             </div>
