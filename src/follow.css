@@ -1,0 +1,65 @@
+#par{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 00.75rem 1rem;
+    
+    /* background: linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.562),transparent); */
+    border-radius: 14px;
+    /* animation-name: scale;
+    animation-timeline: view();
+    animation-range: entry 0% cover 80%; */
+    border: 1px dashed rgba(0, 0, 0, 0.651);
+    .para{
+        display: flex;
+        width: max-content;
+
+    }
+}
+#prof{
+    margin-right: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: black;
+    border-radius: 50%;}
+   #prname{
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    color: #000;
+   }
+#pusern{
+    color: #000;
+    font-size: 0.8rem;
+}
+button{
+    background-color: rgba(104, 104, 104, 0.178);
+    padding:0.8rem 1.5rem ; 
+    border-radius: 11px;
+    border: none;
+    font-size: 0.9rem;
+    align-self: center;
+    transition: .7s;
+    font-weight: 300;
+}
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+#prof>img{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* @keyframes scale {
+    0%{
+        opacity: .3;
+        scale: .2;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+} */
