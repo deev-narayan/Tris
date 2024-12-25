@@ -12,7 +12,10 @@ export default function home({profile,name,fcount,fwcount}){
         const dat = {
             src:file,
         }
-        setPost([dat,...post]);
+        if(dat.src!==undefined){
+            setPost([dat,...post]);
+            setFile(undefined);
+        }
         console.log(post);
     }
     return(
@@ -68,7 +71,7 @@ export default function home({profile,name,fcount,fwcount}){
                 </div>
                 <input type="file" onChange={(e)=>{
               setFile(URL.createObjectURL(e.target.files[0]))}} />
-                <button id="post" onClick={addPost}>Post</button>
+                <button id="post" onClick={addPost} >Post</button>
                 </div>
                 {post.map((item, index) => (
                 <Posts key={post.length - index} imgsrc={item.src} alt="" name={"Divyansh"} id={"devkr_7"}  likeNo={0} ownimg={profile} />

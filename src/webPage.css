@@ -148,6 +148,8 @@ body{
 }
 #newpost{
     width: 100%;
+    position: relative;
+    bottom: 0;
     height: max-content;
     display: flex;
     justify-content: space-between;
@@ -262,15 +264,26 @@ img{
         display: none;
     }
     #center2{
+        margin-top: 4rem;
         width: 85%;
     }
     #left{
         display: none
+    }
+    #newpost{
+        position: fixed;
+        width: 83.5%;
+        top: 80%;
+        z-index: 9999999;
     }
 }
 
 @media (max-width:500px){
     #center2{
         width: 95%;
+        margin-top: 3.5rem;
+    }
+    #newpost{
+        width: 93%;
     }
 }
