@@ -79,6 +79,7 @@ body{
     height: 100vh;
 }
 #center2{
+    position: relative;
     width: 42%;
     height: 100vh;
     overflow-y: auto;
@@ -91,7 +92,7 @@ body{
     background: #8d7c7c28;
   }
 #center2::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent,black);
+    background: #dadada;
   }
 #right{
     margin-top: 5rem;
@@ -273,8 +274,8 @@ img{
         display: none;
     }
     #center2{
-        margin-top: 4rem;
-        width: 85%;
+        width: 95%;
+        padding-top: 3.5rem;
     }
     #left{
         display: none
@@ -284,11 +285,12 @@ img{
     }
     #newpost{
         position: fixed;
-        width: 83.5%;
-        top: 80%;
+        width: 95%;
+        bottom: 0;
         z-index: 9999999;
         background-color: transparent;
         backdrop-filter: blur(1rem);
+        box-shadow: 0 0 12px black;
         #post{
             color: #fff;
             box-shadow: 0 0 12px white;
@@ -299,13 +301,11 @@ img{
 @media (max-width:500px){
     #center2{
         width: 95%;
-        margin-top: 3.5rem;
     }
     #newpost{
         width: 94.9%;
         #pic2{
             display: none;
         }
-        box-shadow: 0 0 12px black;
     }
 }
